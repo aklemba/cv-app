@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph.xml"
+    app:startDestination="@id/summaryFragment">
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="pl.adamklemba.cvapp.summary.SummaryFragment"
+        android:label="summary_fragment"
+        tools:layout="@layout/summary_fragment" />
+
+    <fragment
+        android:id="@+id/knowledgeFragment"
+        android:name="pl.adamklemba.cvapp.knowledge.KnowledgeFragment"
+        android:label="knowledge_fragment"
+        tools:layout="@layout/knowledge_fragment" />
+
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="pl.adamklemba.cvapp.experience.ExperienceFragment"
+        android:label="experience_fragment"
+        tools:layout="@layout/experience_fragment" />
+</navigation>

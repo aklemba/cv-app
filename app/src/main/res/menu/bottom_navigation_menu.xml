@@ -2,21 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/professional_summary"
+        android:id="@+id/summaryFragment"
         android:enabled="true"
         android:icon="@drawable/ic_summary"
-        android:title="@string/navigation_bottom_bar_summary"/>
+        android:title="@string/navigation_bottom_bar_summary" />
 
     <item
-        android:id="@+id/technical_topics"
+        android:id="@+id/knowledgeFragment"
         android:enabled="true"
         android:icon="@drawable/ic_wrench"
-        android:title="@string/navigation_bottom_bar_technical_knowledge"/>
+        android:title="@string/navigation_bottom_bar_knowledge" />
 
     <item
-        android:id="@+id/experience"
+        android:id="@+id/experienceFragment"
         android:enabled="true"
         android:icon="@drawable/ic_suitcase"
-        android:title="@string/navigation_bottom_bar_experience"/>
-
+        android:title="@string/navigation_bottom_bar_experience" />
 </menu>
