@@ -1,23 +1,15 @@
 package pl.adamklemba.cvapp.knowledge
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import pl.adamklemba.cvapp.R
+import pl.adamklemba.cvapp.base.BaseFragment
+import pl.adamklemba.cvapp.databinding.KnowledgeFragmentBinding
 
 @AndroidEntryPoint
-class KnowledgeFragment : Fragment() {
+class KnowledgeFragment : BaseFragment<KnowledgeFragmentBinding>() {
 
-    private val viewModel: KnowledgeViewModel by viewModels()
+    override val viewModel: KnowledgeViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.knowledge_fragment, container, false)
-    }
+    override fun getLayoutId() = R.layout.knowledge_fragment
 }

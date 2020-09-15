@@ -1,23 +1,15 @@
 package pl.adamklemba.cvapp.experience
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import pl.adamklemba.cvapp.R
+import pl.adamklemba.cvapp.base.BaseFragment
+import pl.adamklemba.cvapp.databinding.ExperienceFragmentBinding
 
 @AndroidEntryPoint
-class ExperienceFragment : Fragment() {
+class ExperienceFragment : BaseFragment<ExperienceFragmentBinding>() {
 
-    private val viewModel: ExperienceViewModel by viewModels()
+    override val viewModel: ExperienceViewModel by viewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.experience_fragment, container, false)
-    }
+    override fun getLayoutId() = R.layout.experience_fragment
 }
