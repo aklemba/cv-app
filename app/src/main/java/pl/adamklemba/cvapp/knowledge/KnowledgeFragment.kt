@@ -7,7 +7,7 @@ import pl.adamklemba.cvapp.base.BaseFragment
 import pl.adamklemba.cvapp.databinding.KnowledgeFragmentBinding
 
 @AndroidEntryPoint
-class KnowledgeFragment : BaseFragment<KnowledgeFragmentBinding>() {
+class KnowledgeFragment : BaseFragment<KnowledgeFragmentBinding, KnowledgeViewModel>() {
 
     override val viewModel: KnowledgeViewModel by viewModels()
 

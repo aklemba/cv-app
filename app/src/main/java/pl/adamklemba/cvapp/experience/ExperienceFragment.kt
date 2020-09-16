@@ -7,7 +7,7 @@ import pl.adamklemba.cvapp.base.BaseFragment
 import pl.adamklemba.cvapp.databinding.ExperienceFragmentBinding
 
 @AndroidEntryPoint
-class ExperienceFragment : BaseFragment<ExperienceFragmentBinding>() {
+class ExperienceFragment : BaseFragment<ExperienceFragmentBinding, ExperienceViewModel>() {
 
     override val viewModel: ExperienceViewModel by viewModels()
 

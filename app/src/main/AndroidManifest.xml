@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.adamklemba.cvapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".CvApplication"
         android:allowBackup="true"
