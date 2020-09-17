@@ -20,7 +20,6 @@ class SummaryFragment : BaseFragment<SummaryFragmentBinding, SummaryViewModel>()
     }
 
     private fun showErrorDialog(@StringRes messageId: Int) {
-        ErrorDialog(messageId)
-            .show(this@SummaryFragment.parentFragmentManager, ErrorDialog.TAG)
+        ErrorDialog(messageId).show(parentFragmentManager, ErrorDialog.TAG)
     }
 }

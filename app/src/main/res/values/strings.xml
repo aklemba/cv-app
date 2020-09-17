@@ -5,4 +5,8 @@
     <string name="navigation_bottom_bar_experience">Experience</string>
     <string name="error">Error</string>
     <string name="ok">OK</string>
+    <string name="knowledge_level_basic">Basic</string>
+    <string name="knowledge_level_intermediate">Intermediate</string>
+    <string name="knowledge_level_advanced">Advanced</string>
+    <string name="retry">Retry</string>
 </resources>

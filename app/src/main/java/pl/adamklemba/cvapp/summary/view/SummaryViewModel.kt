@@ -12,6 +12,7 @@ import pl.adamklemba.cvapp.liveData.SingleLiveEvent
 import pl.adamklemba.cvapp.model.ProfileSummary
 import pl.adamklemba.cvapp.summary.domain.GetProfileSummaryUseCase
 import timber.log.Timber
+import java.util.concurrent.TimeUnit
 
 class SummaryViewModel @ViewModelInject constructor(
     private val getProfileSummaryUseCase: GetProfileSummaryUseCase
@@ -35,6 +36,7 @@ class SummaryViewModel @ViewModelInject constructor(
         getProfileSummaryUseCase.execute()
             .doOnSubscribe { loaderEnabled.postValue(true) }
             .doFinally { loaderEnabled.postValue(false) }
+            .delay(LOADING_DELAY_SEC, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(
@@ -52,5 +54,9 @@ class SummaryViewModel @ViewModelInject constructor(
     private fun handleError(error: Throwable) {
         Timber.e(error)
         this.errorMessageId.value = R.string.error
+    }
+
+    companion object {
+        const val LOADING_DELAY_SEC = 1L
     }
 }

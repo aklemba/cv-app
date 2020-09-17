@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/knowledgeFragment"
-        android:name="pl.adamklemba.cvapp.knowledge.KnowledgeFragment"
+        android:name="pl.adamklemba.cvapp.knowledge.view.KnowledgeFragment"
         android:label="knowledge_fragment"
         tools:layout="@layout/knowledge_fragment" />
 

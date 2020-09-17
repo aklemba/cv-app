@@ -42,7 +42,7 @@
             android:adjustViewBounds="true"
             android:paddingVertical="@dimen/screen_padding"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/nameTextView"
+            android:layout_marginEnd="@dimen/margin_medium"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile_picture" />
 

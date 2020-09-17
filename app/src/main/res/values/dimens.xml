@@ -2,6 +2,7 @@
 <resources>
     <dimen name="summary_profile_picture_height">100dp</dimen>
 
+    <dimen name="padding_small">8dp</dimen>
     <dimen name="screen_padding">12dp</dimen>
 
     <dimen name="margin_medium">16dp</dimen>
