@@ -30,6 +30,6 @@ there is a workaround provided in Google's Architecture Blueprints[https://devel
 Unfortunately the workaround doesn't work for me. No time to go back using Dagger2.
 
 ### Missing in the app
- - There should be a screen with all third party libraries used.
+ - There should be a screen with list of all third party libraries used.
  - proguard configuration might have some rules missing.
  - Firebase support must be added before release for crash reports and statistics
