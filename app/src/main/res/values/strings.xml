@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CVApp</string>
+    <string name="navigation_bottom_bar_summary">Summary</string>
+    <string name="navigation_bottom_bar_knowledge">Topics of knowledge</string>
+    <string name="navigation_bottom_bar_experience">Experience</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="knowledge_level_basic">Basic</string>
+    <string name="knowledge_level_intermediate">Intermediate</string>
+    <string name="knowledge_level_advanced">Advanced</string>
+    <string name="retry">Retry</string>
+    <string name="job_experience_employment_period">%s - %s</string>
 </resources>
