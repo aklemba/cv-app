@@ -44,8 +44,8 @@
             android:text="@{viewModel.introduction}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="Introduction"
-            app:layout_constraintTop_toBottomOf="@+id/profilePictureImageView" />
+            app:layout_constraintTop_toBottomOf="@+id/profilePictureImageView"
+            tools:text="Introduction" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -54,8 +54,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="Description"
-            app:layout_constraintTop_toBottomOf="@+id/introductionTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/introductionTextView"
+            tools:text="Description" />
+
+        <include
+            layout="@layout/loader_layout"
+            app:loaderEnabled="@{viewModel.loaderEnabled}" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

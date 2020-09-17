@@ -25,12 +25,16 @@ class SummaryViewModel @ViewModelInject constructor(
 
     val errorMessageId = SingleLiveEvent<@StringRes Int>()
 
+    val loaderEnabled = MutableLiveData(false)
+
     init {
         loadProfileSummary()
     }
 
     private fun loadProfileSummary() {
         getProfileSummaryUseCase.execute()
+            .doOnSubscribe { loaderEnabled.postValue(true) }
+            .doFinally { loaderEnabled.postValue(false) }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(
