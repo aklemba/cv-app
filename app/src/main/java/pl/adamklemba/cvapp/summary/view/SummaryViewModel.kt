@@ -36,7 +36,6 @@ class SummaryViewModel @ViewModelInject constructor(
         getProfileSummaryUseCase.execute()
             .doOnSubscribe { loaderEnabled.postValue(true) }
             .doFinally { loaderEnabled.postValue(false) }
-            .delay(LOADING_DELAY_SEC, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(
