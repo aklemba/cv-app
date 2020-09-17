@@ -15,6 +15,8 @@ for dependency injection.
 
 HTTP request are performed by Retrofit2 library and image downloading is performed by Glide library
 
+Asynchronous calls are handled by RxJava3 library.
+
 This project applies MVVM with Clean Architecture approach using UseCases and Repository pattern
 
 ### Testing
