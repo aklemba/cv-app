@@ -9,4 +9,5 @@
     <string name="knowledge_level_intermediate">Intermediate</string>
     <string name="knowledge_level_advanced">Advanced</string>
     <string name="retry">Retry</string>
+    <string name="job_experience_employment_period">%s - %s</string>
 </resources>

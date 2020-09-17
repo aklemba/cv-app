@@ -9,4 +9,5 @@
 
     <!-- Text sizes  -->
     <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
 </resources>

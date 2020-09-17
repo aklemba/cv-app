@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/experienceFragment"
-        android:name="pl.adamklemba.cvapp.experience.ExperienceFragment"
+        android:name="pl.adamklemba.cvapp.experience.view.ExperienceFragment"
         android:label="experience_fragment"
         tools:layout="@layout/experience_fragment" />
 </navigation>

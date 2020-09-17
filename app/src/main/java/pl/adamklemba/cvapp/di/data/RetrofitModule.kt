@@ -1,5 +1,6 @@
 package pl.adamklemba.cvapp.di.data
 
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,7 +28,11 @@ class RetrofitModule {
                     .build()
             )
             .baseUrl("https://gist.githubusercontent.com/")
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create(GSON_BUILDER))
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .build()
+
+    companion object {
+        private val GSON_BUILDER = GsonBuilder().setDateFormat("MM-yyyy").create()
+    }
 }
