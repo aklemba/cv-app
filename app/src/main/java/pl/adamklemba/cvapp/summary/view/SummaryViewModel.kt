@@ -12,7 +12,6 @@ import pl.adamklemba.cvapp.liveData.SingleLiveEvent
 import pl.adamklemba.cvapp.model.ProfileSummary
 import pl.adamklemba.cvapp.summary.domain.GetProfileSummaryUseCase
 import timber.log.Timber
-import java.util.concurrent.TimeUnit
 
 class SummaryViewModel @ViewModelInject constructor(
     private val getProfileSummaryUseCase: GetProfileSummaryUseCase
